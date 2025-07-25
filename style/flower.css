@@ -9,7 +9,9 @@
   font-variation-settings:
     "wdth" 100;
 }
-
+body{
+    margin: 0;
+}
 .page-contents{
     max-width: 1440px;
     margin: 0 auto;
@@ -98,7 +100,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         place-items: center;
-        margin-top: 120px ;
+        margin: 120px 0 210px;
        
     }
     .card{
@@ -165,7 +167,48 @@
         border: none;
         
     }
+/* features section related styles */
+    .flower-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3.95rem; 
+    }
 
+  .flower-image{
+    position: relative;
+    width: 100%;
+    max-width: 540px;
+  }
+  .flower-profile-pic{
+    height: 597px;
+    width: 100%;
+    display: block;
+  }
+  .badge{
+    height: 286px;
+    max-width: 286px;
+    top: -125px;
+    right: -85px;
+    position: absolute;
+     filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
+      z-index: 10;
+  }
+    .flower-text{
+        max-width: 540px;
+        padding: 38px 0;
+    }
+    .section-title{
+        font-size:3.125rem ;
+        font-weight: bold;
+        color:#000000 ;
+        margin: 0px;
+    }
+    .flower-text ul {
+         font-size:1.360rem ;
+        font-weight: 400;
+        color:rgba(0, 0, 0, 0.5) ;
+    }
 
  @media screen and (max-width:567px) {
     .contents{
@@ -227,6 +270,9 @@
         object-fit: cover;
      }
      /* Card Section */
+     .card-section{
+        margin: 45px 0 ;
+     }
     .card-section-title{
         font-size: 1.7rem;
         font-weight: bold;
@@ -295,4 +341,41 @@
         border: none;
         
     }
+    /* Flower Section  */
+    .badge{
+        display: none;
+    }
+      .flower-section {
+    max-width: 361px;
+    width: 100%;
+    margin:20px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    
+  }
+    .flower-profile-pic {
+     height: auto;
+    width: 100%;
+  }
+   .flower-text{
+        max-width: 361px;
+        padding:0;
+    }
+  .section-title{
+    font-size: 1.5rem;
+    font-weight: bold ;
+    text-align: left;
+    margin-top: 18px;
+  }
+   .flower-text ul {
+   font-size:0.875rem ;
+   font-weight: 500;
+    padding-left: 1rem;
+    text-align: left;
+  }
 }
