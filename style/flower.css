@@ -9,10 +9,22 @@
   font-variation-settings:
     "wdth" 100;
 }
-body{
-    margin:0px;
-     background-color: #F5F8FF;
+* {
+  box-sizing: border-box;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #F5F8FF;
+  width: 100%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .page-contents{
     max-width: 1440px;
     margin: 0 auto;
@@ -433,7 +445,7 @@ body{
 
  @media screen and (max-width:567px) {
     .contents{
-        padding: 0px 20px;
+        padding: 0px;
        margin: 0px;
     }
 
