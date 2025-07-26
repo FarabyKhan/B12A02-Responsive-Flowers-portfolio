@@ -171,13 +171,13 @@ body{
     .btn-card:hover {
     background-color: #2a7dca;
     }
-/* features section related styles */
+/* Flower section related styles */
     .flower-section{
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 3.95rem; 
-        margin-bottom: 133px;
+        margin-bottom: 100px;
     }
 
   .flower-image{
@@ -279,14 +279,15 @@ body{
         font-size:1rem ;
         font-weight:600 ;
         color: white;
-         background-color: transparent;
-         border: none;
-         padding: 19px 95px;
-          text-decoration: underline;
+        background-color: transparent;
+        border: none;
+        padding: 19px 95px;
+        text-decoration: underline;
+        text-underline-offset: 6px;
     }
     
     .card-content-3{
-         text-align: center;
+        text-align: center;
         margin: 160px auto 140px;
 
     }
@@ -299,11 +300,12 @@ body{
     .card-content-3 button {
         font-size: 1.75rem ;
         font-weight: 600 ;
-       color: white;
+        color: white;
         background-color: transparent;
-         border: none;
-         padding: 15px 66px;
-          text-decoration: underline;
+        border: none;
+        padding: 15px 66px;
+        text-decoration: underline;
+        text-underline-offset: 6px;
         
     }
     .deal-card{
@@ -326,7 +328,9 @@ body{
         grid-row: 1/3;
     }
     /* Join-section */
-
+    .join-section{
+        margin:60px auto ;
+    }
     .email-section{
         background-image: url('../assets/news-letter-bg.png');
        background-size: cover;
@@ -374,6 +378,56 @@ body{
     .btn-sub:hover {
     background-color: #2a7dca;
     }
+    /* footer section */
+    .footer{
+        padding: 20px 20px 50px;
+        width: 100%;
+    }
+    .footer-container{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    .footer-brand img{
+        height: auto;
+        width: 150px;
+    }
+    .footer-brand p{
+        font-size: 1.375rem;
+        font-size: 400;
+        color: rgba(0, 0, 0, 0.5);
+        height: auto;
+        width: 359px;
+        margin-top: 16px;
+    }
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 26px 110px; 
+    }
+    .links-column  {
+  display: flex;
+  flex-direction: column;
+  gap: 26px ;
+}
+.footer-links a, .footer-socials a{
+     text-decoration: none;
+     color: #6B7280;
+     font-size: 1rem;
+     font-weight: 400;
+     
+
+}
+.footer-social {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.footer-social img {
+    width:30px;
+}
  @media screen and (max-width:567px) {
     .contents{
         padding: 0px;
@@ -509,21 +563,18 @@ body{
     background-color: #2a7dca;
     }
     /* Flower Section  */
-    .badge{
-        display: none;
-    }
+   
       .flower-section {
     max-width: 361px;
     width: 100%;
     margin:20px;
-    padding: 0 16px;
+    padding: 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 0;
-    
+    gap: 18px;
   }
     .flower-profile-pic {
      height: auto;
@@ -531,20 +582,23 @@ body{
   }
    .flower-text{
         max-width: 361px;
-        padding:0;
+        padding:10px 0;
     }
   .section-title{
     font-size: 1.5rem;
     font-weight: bold ;
     text-align: left;
-    margin-top: 18px;
   }
    .flower-text ul {
    font-size:0.875rem ;
    font-weight: 500;
     padding-left: 1rem;
     text-align: left;
+    margin-bottom: 100px;
   }
+   .badge{
+        display: none;
+    }
     /* Deal Section */
   
     .deal-section-title{
@@ -606,10 +660,11 @@ body{
         font-size:1rem ;
         font-weight:600 ;
         color: white;
-         background-color: transparent;
-         border: none;
-         padding: 19px 95px;
-          text-decoration: underline;
+        background-color: transparent;
+        border: none;
+        padding: 19px 95px;
+        text-decoration: underline;
+        text-underline-offset: 3px;
     }
      .deal-card{
         display: grid;
@@ -635,10 +690,11 @@ body{
         font-size:1rem ;
         font-weight:600 ;
         color: white;
-         background-color: transparent;
-         border: none;
-         padding: 19px 95px;
-          text-decoration: underline; 
+        background-color: transparent;
+        border: none;
+        padding: 19px 95px;
+        text-decoration: underline; 
+        text-underline-offset: 3px;
     }
     .card_1{
         grid-column: auto;
@@ -654,7 +710,6 @@ body{
     }
  
   /* Join-section */
-
     .email-section{
         background-image: url('../assets/news-letter-bg.png');
        background-size: cover;
@@ -704,4 +759,43 @@ body{
     .btn-sub:hover {
     background-color: #2a7dca;
     }
-    }
+     /* Footer section */
+  .footer-container {
+    max-width: 361px;
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+    margin-bottom: 50px;
+  }
+  .footer-brand img{
+    width: 180px;
+  }
+
+  .footer-brand p {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .links-column{
+    gap: 32px;
+  }
+  .footer-social {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer-social img {
+    width: 24px;
+  }
+}
+  
+
+    
