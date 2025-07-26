@@ -9,20 +9,9 @@
   font-variation-settings:
     "wdth" 100;
 }
-* {
-  box-sizing: border-box;
-}
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  background-color: #F5F8FF;
-  width: 100%;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+body{
+    margin:0px;
+     background-color: #F5F8FF;
 }
 
 .page-contents{
@@ -752,7 +741,7 @@ img {
   font-size: 0.875rem;
   font-weight: 400;
   height: auto;
-  width: 150px;
+  width: 170px;
   padding: 15px 20px;
   border: none;
     border: none;
