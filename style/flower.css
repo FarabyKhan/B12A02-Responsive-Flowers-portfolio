@@ -198,7 +198,9 @@ body{
     position: absolute;
      filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
       z-index: 10;
+      
   }
+  
     .flower-text{
         max-width: 540px;
         padding: 38px 0;
@@ -428,6 +430,7 @@ body{
 .footer-social img {
     width:30px;
 }
+
  @media screen and (max-width:567px) {
     .contents{
         padding: 0px;
@@ -565,10 +568,9 @@ body{
     /* Flower Section  */
    
       .flower-section {
-    max-width: 361px;
+    max-width: 355px;
     width: 100%;
-    margin:20px;
-    padding: 0;
+    padding: 30px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -793,7 +795,7 @@ body{
   }
 
   .footer-social img {
-    width: 24px;
+    width: 30px;
   }
 }
   
