@@ -433,11 +433,19 @@ body{
 }
 
  @media screen and (max-width:567px) {
-    .contents{
-        padding: 0px;
-       margin: 0px;
-    }
 
+    /* extra styles */
+    img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+     .contents {
+    padding: 0 10px;
+  }
+  .page-contents {
+    padding: 0 10px;
+  }
     .navbar{
         justify-content: space-between;
         gap: 185px;
@@ -529,7 +537,8 @@ body{
  }
  .card-container{
         border: 1px solid pink;
-        max-width: 171px;
+        width: 100%;
+        max-width: 100%;
         height: auto;
         box-shadow: 5px 5px 5px rgba(199, 165, 165, 0.877);
         
@@ -631,20 +640,28 @@ body{
     .card_1{
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/deal-bloom.png');
         height: 184px;
-        width: 361px;
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
         border-radius: 14px;
-    }
+        }
+        
+    
     .card_2{
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/deal-ana.png');
         height: 184px;
-        width: 361px;
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
         border-radius: 14px;
     }
     .card_3{
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../assets/deal-zabo.png');
         height: 172px;
-        width: 361px;
-         border-radius: 14px;
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        border-radius: 14px;
     }
     .card-content{
       text-align: center;
